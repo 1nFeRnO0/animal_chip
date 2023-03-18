@@ -1,9 +1,5 @@
 public class Organization {
+    private int organizationID;
     private String locationName;
-    private String Address;
-
-    public Organization(){
-        this.locationName = null;
-        this.Address = null;
-    }
+    private String locationAddress;
 }
