@@ -1,5 +1,8 @@
-package com.example.animal_chip.entity;
+package com.example.animal_chip.models;
 
+import lombok.Data;
+
+@Data
 public class Animal {
     private int animalID;
     private String animalSpecie;
