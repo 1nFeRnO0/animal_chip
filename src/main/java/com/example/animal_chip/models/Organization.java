@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class Organization {
-    private int organizationID;
+    private Long organizationID;
     private String locationName;
     private String locationAddress;
 }
