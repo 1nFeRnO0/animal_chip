@@ -1,10 +1,23 @@
-package com.example.animal_chip.models;
+// package com.example.animal_chip.models;
 
-import lombok.Data;
+// import lombok.AllArgsConstructor;
+// import lombok.Data;
+// import lombok.NoArgsConstructor;
 
-@Data
-public class Organization {
-    private Long organizationID;
-    private String locationName;
-    private String locationAddress;
-}
+// import javax.persistence.*;
+
+// @Entity
+// @Table(name = "Point")
+// @Data
+// @AllArgsConstructor
+// @NoArgsConstructor
+// public class Organization {
+// @Id
+// @GeneratedValue(strategy = GenerationType.AUTO)
+// @Column(name = "id")
+// private Long id;
+// @Column(name = "name")
+// private String name;
+// @Column(name = "address")
+// private Long address;
+// }
