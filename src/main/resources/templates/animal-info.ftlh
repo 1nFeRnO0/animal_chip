@@ -6,6 +6,9 @@
 <body>
 <h1>FURRYFINDER</h1><hr>
 <h4>Подробная информация о животном</h4>
+<#list images as image>
+    <img src="/images/${image.id}" height="60px" alt="MISSING JPG"/><br><br>
+</#list>
 <b>Вид животного: </b>${animal.type}<br>
 <b>Кличка: </b>${animal.name}<br>
 <b>Название ветклиники: </b>${animal.point}<br>
