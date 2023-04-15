@@ -21,8 +21,8 @@ public class AnimalController {
     private final AnimalService animalService;
 
     @GetMapping("/")
-    public String animals(@RequestParam(required = false) String name, Model model) {
-        model.addAttribute("animals", animalService.listAnimals(name));
+    public String animals(@RequestParam(name = "type", required = false) String type, Model model) {
+        model.addAttribute("animals", animalService.listAnimals(type));
         return "animals";
     }
 

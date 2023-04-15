@@ -7,5 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.example.animal_chip.models.Animal;
 
 public interface AnimalRepository extends JpaRepository<Animal, Long> {
-    List<Animal> findByName(String type);
+    List<Animal> findByType(String type);
 }
