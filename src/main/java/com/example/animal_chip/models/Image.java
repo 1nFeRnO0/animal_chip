@@ -5,8 +5,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import jakarta.persistence.*;
-import lombok.RequiredArgsConstructor;
-import org.hibernate.annotations.Type;
 
 @Entity
 @Table(name = "images")

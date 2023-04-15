@@ -18,7 +18,7 @@
     <h3>Животных нет</h3>
 </#list>
 <hr>
-<h3>Создать новый товар</h3>
+<h3>Создать карточку животного</h3>
 <form action="/animal/create" method="post" enctype="multipart/form-data">
     Тип животного: <input type="text" name="type"/><br><br>
     Кличка: <input type="text" name="name"/><br><br>
@@ -27,7 +27,7 @@
     Первая фотография: <input type="file" name="file1"/><br><br>
     Вторая фотография: <input type="file" name="file2"/><br><br>
     Третья фотография: <input type="file" name="file3"/><br><br>
-    <input type="submit" value="Добавить товар"/>
+    <input type="submit" value="Добавить карточку"/>
 </form>
 </body>
 </html>
