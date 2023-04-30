@@ -22,7 +22,7 @@ public class AnimalService {
     private final AnimalRepository animalRepository;
 
     public List<Animal> listAnimals(String type) {
-        if (type != null) return animalRepository.findByType(type);
+        if (type != null) return animalRepository.findAll(type, AnimalRepository.criteria.type);
         return animalRepository.findAll();
     }
 
