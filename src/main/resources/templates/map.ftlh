@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="english">
   <head>
-    <title>exported project</title>
+    <title>Animal Chip</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -49,7 +49,7 @@
             src="public/external/rectangle11231-puhu-200h.png"
             class="page1-rectangle1"
           />
-          <a href="page3.html" class="page1-navlink">
+          <a href="./account" class="page1-navlink">
             <div class="page1-group2">
               <div class="page1-frame10">
                 <img
@@ -68,7 +68,7 @@
               />
             </div>
           </a>
-          <a href="page2.html" class="page1-navlink1">
+          <a href="./" class="page1-navlink1">
             <div class="page1-group8">
               <img
                 alt="Rectangle21231"
@@ -111,7 +111,7 @@
             <span class="page1-text09"><span>Поиск животного</span></span>
           </div>
           <span class="page1-text11"><span>Где чипировать?</span></span>
-          <a href="page2.html" class="page1-navlink2">
+          <a href="./about" class="page1-navlink2">
             <div class="page1-frame1">
               <img
                 alt="Rectangle101233"

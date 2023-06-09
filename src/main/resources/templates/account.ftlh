@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="english">
   <head>
-    <title>Page3 - exported project</title>
-    <meta property="og:title" content="Page3 - exported project" />
+    <title>Animal Chip</title>
+    <meta property="og:title" content="Animal Chip" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -172,7 +172,7 @@
                 <br />
               </span>
             </div>
-            <a href="3.html" class="page3-navlink1">
+            <a href="./" class="page3-navlink1">
               <div class="page3-group2">
                 <div class="page3-frame10">
                   <span class="page3-text49">Выйти</span>
@@ -190,7 +190,7 @@
                 />
               </div>
             </a>
-            <a href="2.html" class="page3-navlink2">
+            <a href="./" class="page3-navlink2">
               <div class="page3-frame15">
                 <img
                   alt="Rectangle2114"

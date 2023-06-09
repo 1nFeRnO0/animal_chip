@@ -27,10 +27,20 @@ public class AnimalController {
         return "animals";
     }
 
-    // @GetMapping("/?{c}={p}")
-    // public String findAnimals(AnimalRepository.criteria c, String p){
-    //     model.addAttribute("")
-    // }
+    @GetMapping("/map")
+    public String animalMap(){
+        return "map";
+    }
+
+    @GetMapping("/about")
+    public String info(){
+        return "about";
+    }
+
+    @GetMapping("/account")
+    public String animalAccount(){
+        return "account";
+    }
 
     @GetMapping("/animal/{id}")
     public String animalInfo(@PathVariable Long id, Model model) {
