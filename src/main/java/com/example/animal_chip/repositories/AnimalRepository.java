@@ -17,6 +17,6 @@ public interface AnimalRepository extends JpaRepository<Animal, Long> {
         point
     }
     
-    @Query("Select a from Animal a where p.?2 like %?1%")
+    @Query(value = "SELECT * FROM animal a WHERE a.?2 LIKE %?1%", nativeQuery = true)
     List<Animal> findAll(String prompt, criteria c);
 }

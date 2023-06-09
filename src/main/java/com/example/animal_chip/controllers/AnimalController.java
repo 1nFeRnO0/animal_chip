@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.animal_chip.models.Animal;
+import com.example.animal_chip.repositories.AnimalRepository;
 import com.example.animal_chip.services.AnimalService;
 
 import lombok.RequiredArgsConstructor;
@@ -25,6 +26,11 @@ public class AnimalController {
         model.addAttribute("animals", animalService.listAnimals(type));
         return "animals";
     }
+
+    // @GetMapping("/?{c}={p}")
+    // public String findAnimals(AnimalRepository.criteria c, String p){
+    //     model.addAttribute("")
+    // }
 
     @GetMapping("/animal/{id}")
     public String animalInfo(@PathVariable Long id, Model model) {
