@@ -21,12 +21,34 @@ public class AnimalService {
 
     private final AnimalRepository animalRepository;
 
-    public List<Animal> listAnimals(String type) {
-        if (type != null) return animalRepository.findByType(type);
+    public List<Animal> listAnimals(String type, String name, String point) {
+        if (type == null)
+            return animalRepository.findAll();
+        if (type != "") {
+            if (name != "") {
+                if (point != "")
+                    return animalRepository.findByTypeAndNameAndPoint(type, name, point);
+                else
+                    return animalRepository.findByTypeAndName(type, name);
+            } else {
+                if (point != "")
+                    return animalRepository.findByTypeAndPoint(type, point);
+                else
+                    return animalRepository.findByType(type);
+            }
+        } else {
+            if (name != "") {
+                if (point != "")
+                    return animalRepository.findByNameAndPoint(name, point);
+                else
+                    return animalRepository.findByName(name);
+            }
+        }
         return animalRepository.findAll();
     }
 
-    public void saveAnimal(Animal animal, @org.jetbrains.annotations.NotNull MultipartFile file1, MultipartFile file2, MultipartFile file3) throws IOException {
+    public void saveAnimal(Animal animal, @org.jetbrains.annotations.NotNull MultipartFile file1, MultipartFile file2,
+            MultipartFile file3) throws IOException {
         Image image1;
         Image image2;
         Image image3;

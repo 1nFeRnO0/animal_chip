@@ -21,24 +21,31 @@ import java.io.IOException;
 public class AnimalController {
     private final AnimalService animalService;
 
+    @GetMapping("/search")
+    public String animalSearch(@RequestParam(name = "type", required = false) String type,
+            @RequestParam(name = "name", required = false) String name,
+            @RequestParam(name = "point", required = false) String point, Model model) {
+        model.addAttribute("animals", animalService.listAnimals(type, name, point));
+        return "search";
+    }
+
     @GetMapping("/")
-    public String animals(@RequestParam(name = "type", required = false) String type, Model model) {
-        model.addAttribute("animals", animalService.listAnimals(type));
+    public String animals() {
         return "animals";
     }
 
     @GetMapping("/map")
-    public String animalMap(){
+    public String animalMap() {
         return "map";
     }
 
     @GetMapping("/about")
-    public String info(){
+    public String info() {
         return "about";
     }
 
     @GetMapping("/account")
-    public String animalAccount(){
+    public String animalAccount() {
         return "account";
     }
 

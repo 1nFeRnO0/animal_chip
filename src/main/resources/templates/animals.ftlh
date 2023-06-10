@@ -41,24 +41,27 @@
 
       <div class="page-container">
         <div class="page-frame">
+        
           <div class="page-group10">
-            <div class="page-frame1">
-              <img
-                alt="Search22"
-                src="public/external/search22-saou-200h.png"
-                class="page-search"
-              />
-              <span class="page-text"><span>Поиск животного</span></span>
-              <form action="/" method="get">
-                  Поиск по типу животного: <input type="text" name="type"><br>
-                  <input type="submit" value="Поиск"/>
-              </form>
-              <img
-                alt="pixelarticonssearch336"
-                src="public/external/pixelarticonssearch336-how3.svg"
-                class="page-pixelarticonssearch"
-              />
-            </div>
+            <a href="./search" class="page-navlink">
+              <div class="page-frame1">
+                <img
+                  alt="Search22"
+                  src="public/external/search22-saou-200h.png"
+                  class="page-search"
+                />
+                <span class="page-text"><span>Поиск животного</span></span>
+                <form action="/" method="get">
+                    Поиск по типу животного: <input type="text" name="type"><br>
+                    <input type="submit" value="Поиск"/>
+                </form>
+                <img
+                  alt="pixelarticonssearch336"
+                  src="public/external/pixelarticonssearch336-how3.svg"
+                  class="page-pixelarticonssearch"
+                />
+              </div>
+            </a>
             <div class="page-frame2">
               <img
                 alt="Rectangle324"

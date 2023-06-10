@@ -4,11 +4,19 @@
     <title>FURRYFINDER</title>
 </head>
 <body>
-<h1>FURRYFINDER</h1><hr>
+<h1>
+<a href="/" class=page-navlink>
+FURRYFINDER
+</a>
+</h1><hr>
 <h4>Найди себе питомца</h4>
-<form action="/" method="get">
-    Поиск по типу животного: <input type="text" name="type"><br>
-    <input type="submit" value="Поиск"/>
+<form action="/search" method="get">
+    Поиск по типу животного: <input type="text" name="type">
+    <input type="submit" value="Поиск"/><br>
+    Поиск по кличке животного: <input type="text" name="name">
+    <input type="submit" value="Поиск"/><br>
+    Поиск по месту животного: <input type="text" name="point">
+    <input type="submit" value="Поиск"/><br>
 </form>
 <#list animals as animal>
     <div>
